@@ -34,7 +34,7 @@ app.use(errorController.get404);
 
 mongoose
   .connect(
-    "mongodb+srv://maximilian:9u4biljMQc4jjqbe@cluster0-ntrwp.mongodb.net/shop?retryWrites=true"
+    "mongodb+srv://OnkarDivekkar:121021@cluster0.vsl4e0p.mongodb.net/shop?retryWrites=true&w=majority"
   )
   .then((result) => {
     User.findOne().then((user) => {
