@@ -105,7 +105,7 @@ exports.postOrder = (req, res, next) => {
     })
     .catch((err) => console.log(err));
 };
-
+//this controller gets the order back
 exports.getOrders = (req, res, next) => {
   Order.find({ "user.userId": req.user._id })
     .then((orders) => {
